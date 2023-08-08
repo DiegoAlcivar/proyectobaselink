@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/video/agregar.css">
+<!--/css/capacitacion/agregarcapa.css-->
+
+<!-- crud-->
+<div id="container__iniciar__session">
+
+    <form action="/comentario/agregar/{{user.id_usuario}}" method="post">
+
+        <div id="titulo">
+            <h3>Agregar Comentario </h3>
+        </div>
+
+        <div id="comentario">
+            <label>Agrega comentario:</label>
+            <input type="text" name="comentario" required placeholder="Agrege comentario">
+        </div>
+
+        <div id="fecha_puclicacion">
+            <label>Fecha de publicacion:</label>
+            <input id="fechas" type="text" readonly name="fecha_puclicacion" required placeholder="fecha">
+        </div>
+
+        <div id="boton">
+            <button type="submit" id="">Guardar</button>
+        </div>
+
+    </form>
+
+    <script src="/js/fecha.js"></script>

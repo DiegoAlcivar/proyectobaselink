@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/video/editar.css">
+<div id="contenedor">
+    {{#each lista}}
+    <form action="/objetivo/editar/{{id_objetivo}}" method="post">
+    <div id="titulo">
+        <h2>Actualizar el objetivo</h2>
+    </div>
+    <div id="objetivo">
+        <label>Objetivos:</label>
+        <input type="text" name="objetivo" value="{{objetivo}}" required  placeholder=" Objetivo">
+    </div>
+    <div id="redesSociales">
+        <label>RedesSociales:</label>
+        <input type="text" name="redesSociales" value="{{redesSociales}}" required  placeholder=" Ingrese la red social">
+    </div>
+
+    <div id="boton">
+        <button type="submit">Actualizar</button>
+    </div>
+    </form>
+    {{/each}}
+</div>

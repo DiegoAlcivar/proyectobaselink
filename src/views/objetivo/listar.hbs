@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/video/listar.css"/>
+
+
+<!-- tablas-->
+<form action="/objetivo/listar/{{user.id_usuario}}" method="get">
+    <div id="container">
+
+            <div class="row">
+
+            
+            {{#each lista}}
+            
+                <div id="objetivo">
+                    <h3 style="text-align:center" >DESCRIPCIÓN - TABLA</h3>
+                    <p><strong>Objetivo:</strong> <br>{{objetivo}}</p>
+                </div>
+
+                <div id="redesSociales">
+                    <p><strong>Red social:</strong> <br>{{redesSociales}}</p>
+                </div>
+
+                <div id="boton">
+                    <a href="/objetivo/editar/{{id_objetivo}}"><button type="button">Editar</button></a> 
+                </div>
+                
+
+                <div id="eliminar">
+                <a href="/objetivo/eliminar/{{id_objetivo}}" ><button type="button">Eliminar</button></a> 
+                </div>
+
+        <br><br>
+    
+            {{/each }}
+            </div>
+    </div>
+</form>

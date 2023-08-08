@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/video/agregar.css">
+
+<div id="container">
+    <form action="/objetivo/agregar/{{user.id_usuario}}" method="post">
+    <div id="titulo">
+        <h3>Agregar el objetivo</h3>
+    </div>
+    <div id="objetivos">
+        <label>objetivos de la pagina:</label>
+        <input type="text" name="objetivo" required  placeholder="ingrese los objetivos"/>
+    </div>
+    <div id="redesSociales">
+        <label>Ingrese la redesSociales:</label>
+        <input type="text" name="redesSociales" required placeholder=" ingrese las redesSociales"/>
+    </div>
+
+   <div id="boton">
+            <button type="submit" id="">Guardar</button>
+        </div>
+
+    </form>
